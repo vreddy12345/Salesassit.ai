@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            list-style: none;
+            background-color: #e9ecef;
+            border-radius: 0.25rem;
+        }
+
+        .breadcrumb-item {
+            display: flex;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: #6c757d;
+            content: ">";
+        }
+
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            margin: 20px;
+        }
+
+
+        .card {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+
+        .card p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card .heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 32px;
+            height: 32px;
+            background: url(heart.png) no-repeat;
+            background-size: contain;
+        }
+
+        .heading {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="heading">Tan Trim</h1>
+
+    </div>
+    <div class="icons">
+        <P>Travel</P>
+        <p>Accesories</p>
+        <P>Jewelleries</P>
+        <P>Gift</P>
+    </div>
+    <nav aria-label="breadcrumb">
+
+        <img src="https://i.ibb.co/7tBqwJg/Screenshot-2024-02-19-115044.png" alt="Screenshot-2024-02-19-115044" border="0">
+        <P>All bags</P>
+
+        <img src="https://i.ibb.co/yWzXmC2/Screenshot-2024-02-19-120937.png" alt="Screenshot-2024-02-19-120937" border="0">
+        <P>Vanity Pouch</P>
+
+    </nav>
+    <div class="main">
+        <div class="card">
+            <img src="https://i.ibb.co/7X1QbkN/Screenshot-2024-02-19-115353.png" alt="Screenshot-2024-02-19-115353" border="0">
+            <div class="heart"></div>
+            <h3>The Brown Metro Movers</h3>
+            <p>₹4899</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/x8hfTtZ/Screenshot-2024-02-19-115451.png" alt="Screenshot-2024-02-19-115451" border="0">
+            <div class="heart"></div>
+            <h3>The Metro Movers Black</h3>
+            <p>₹4899</p>
+        </div>
+
+
+        <div class="card">
+            <img src="https://i.ibb.co/BzQhPyX/Screenshot-2024-02-19-115646.png" alt="Screenshot-2024-02-19-115646" border="0">
+            <div class="heart"></div>
+            <h3>The Brown Metro Movers</h3>
+            <p>₹4899</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/GR7ysMh/Screenshot-2024-02-19-115757.png" alt="Screenshot-2024-02-19-115757" border="0">
+            <div class="heart"></div>
+            <h3>The Metro Movers Black</h3>
+            <p>₹4899</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
